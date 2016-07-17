@@ -28,4 +28,5 @@ FactoryGirl.define do
       songs { create_list(:song, 3) }
     end
   end
+
 end
