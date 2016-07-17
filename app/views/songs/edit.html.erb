@@ -1,14 +1,13 @@
-<h1>Edit Song</h1>
-<p> Change this song for <%= @artist.name %></p>
+<h1>Edit <%= @song.title %></h1>
 <%=  form_for([@artist, @song]) do |f| %>
-  <% if @song.errors.any? %>
+  <!-- <% if @song.errors.any? %>
     <h2><%= pluralize(@song.errors.count, "errors") %> prohibited this record from being saved:</h2>
     <ul>
       <% @song.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
-  <% end %>
+  <% end %> -->
 
   <%= f.label :title %>
   <%= f.text_field :title %>
