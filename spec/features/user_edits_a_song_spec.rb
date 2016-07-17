@@ -13,7 +13,6 @@ RSpec.feature "User edits an existing song" do
 
     expect(current_path).to eq song_path(song)
     expect(page).to have_content updated_title
-    save_and_open_page
     # Then I should see a link to the song artist's individual page
     # expect(page).to have_link artist.name, href: artist_path(artist)
   end
